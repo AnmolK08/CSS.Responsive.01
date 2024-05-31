@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    
+}
+
+#nav1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.gola{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+#nav2 a:hover{
+    text-decoration: underline;
+}
+#nav2 #icon{
+    display: none;
+}
+
+#nav2 a span{
+    color: grey;
+    margin-left: 30px;
+}
+
+#nav-2{
+    height: 6vh;
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 40px;
+}
+#nav-2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    font-weight: 700;
+}
+#nav-2 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+#nav-2 #icon{
+    display: none;
+}
+#content{
+    height:calc(100% - 100px);
+}
+
+#text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: orange;
+    height: 7px;
+}
+
+#text-content::-webkit-scrollbar-button{
+    background-color: black;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.elem h1{
+    font-size: 6vw;
+    font-weight: 50;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    /* background-color: aqua; */
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+
+#image-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: 0 25%;
+}
+
+@media (max-width:600px) {
+    
+    #nav{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        
+    }
+    
+    #nav1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    
+    .gola{
+        height: 15px;
+        width: 15px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    #nav2{
+        gap: 20px;
+    }
+    #nav2 #icon{
+        display: initial;
+    }
+    #icon i{
+        font-size: 20px;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    #nav2 a{
+        display: none;
+       
+    }
+    #nav2 a:nth-child(1){
+        display: initial;
+    }
+    #nav2 a:hover{
+        text-decoration: underline;
+    }
+    
+    #nav2 a span{
+        color: grey;
+        margin-left: 15px;
+    }
+    
+    #nav-2{
+        height: 40px;
+        background-color: orange;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    #nav-2 a{
+        display: none;
+    }
+    #nav-2 #icon{
+        display: initial;
+    }
+
+    #content{
+        height:calc(100% - 100px);
+    }
+    
+    #text-content{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    #text-content::-webkit-scrollbar{
+        background-color: orange;
+        height: 7px;
+    }
+    
+    #text-content::-webkit-scrollbar-button{
+        background-color: black;
+    }
+
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .elem h1{
+        font-size: 12vw;
+        font-weight: 50;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    #image-content{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+    #image-content::-webkit-scrollbar{
+        display: none;
+    }
+    
+    #image-content img{
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-position: 0 25%;
+    }
+    
+}
